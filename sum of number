@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        <label>enter first number </label>
+        <input type="number" name="t1" value="" /> <br>
+        <label> enter second number </label>
+        <input type="number" name="t2" value=""/><br>
+        <input type="submit" name="send" value="Addition"/>
+    </form>
+    <br>
+    <?php
+    if(isset($_GET['send'])){
+        $num1 = $_GET['t1'];
+        $num2= $_GET['t2'];
+        $sum=$num1+$num2;
+        echo "Sum of the two number=$sum";
+    }
+        
+    ?>
+</body>
+</html>
